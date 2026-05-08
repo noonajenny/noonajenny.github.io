@@ -635,7 +635,7 @@
             <div class="gps-text" id="gps-text">Tap tombol di bawah untuk deteksi lokasi kamu</div>
             <button class="btn-pink" onclick="checkGPS()">Deteksi Lokasi</button>
           </div>
-          <button class="btn-stamp" id="btn-gps-stamp" disabled onclick="doStamp('gps')">Ambil Stamp</button>
+          <button class="btn-stamp" id="btn-gps-stamp" disabled onclick="doStamp('gps')">Ambil Tjap</button>
         </div>
 
         <div id="content-upload" style="display:none">
@@ -645,14 +645,14 @@
             <div class="upload-hint">Foto sebagai bukti kehadiran</div>
           </div>
           <input type="file" id="file-input" accept="image/*" onchange="handleFile(this)">
-          <div class="admin-note">📋 Foto akan diverifikasi admin sebelum stamp aktif</div>
+          <div class="admin-note">📋 Foto akan diverifikasi admin sebelum Tjap aktif</div>
           <button class="btn-stamp" id="btn-upload-stamp" disabled onclick="doStamp('upload')">Kirim untuk Verifikasi</button>
         </div>
       </div>
 
       <div class="stamp-success" id="stamp-success">
         <div class="stamp-circle" id="success-circle"></div>
-        <div class="success-title">Stamp Berhasil! 🐻</div>
+        <div class="success-title">Tjap Berhasil! 🐻</div>
         <div class="success-msg" id="success-msg"></div>
         <button class="btn-outline" onclick="resetCheckin()">Check-in Event Lain</button>
       </div>
@@ -662,7 +662,7 @@
     <!-- PASSPORT PANEL -->
     <div class="panel" id="panel-passport">
       <div class="stats-row">
-        <div class="stat-card"><div class="stat-num" id="stat-total">0</div><div class="stat-lbl">Stamp</div></div>
+        <div class="stat-card"><div class="stat-num" id="stat-total">0</div><div class="stat-lbl">Tjap</div></div>
         <div class="stat-card"><div class="stat-num">4</div><div class="stat-lbl">Event</div></div>
         <div class="stat-card"><div class="stat-num" id="stat-pct">0%</div><div class="stat-lbl">Koleksi</div></div>
       </div>
@@ -673,7 +673,7 @@
       </div>
 
       <div class="passport-page">
-        <div class="page-title">🐻 Halaman Stamp</div>
+        <div class="page-title">🐻 Halaman Tjap</div>
         <div class="page-sub">Hari Haetjhan Sedoenia · Juni 2026</div>
         <div class="stamps-grid" id="stamps-grid">
           <div class="stamp-slot" id="slot-kopi"><span class="slot-icon">☕</span><span class="slot-name">Kedai Kopi</span></div>
@@ -685,7 +685,7 @@
 
       <div class="empty-state" id="empty-state">
         <span class="empty-icon-big">🐻</span>
-        <div class="empty-txt">Belum ada stamp.<br>Check-in ke event dulu!</div>
+        <div class="empty-txt">Belum ada Tjap<br>Check-in ke event dulu!</div>
       </div>
     </div>
 
@@ -702,11 +702,11 @@
       </div>
       <div class="info-step">
         <div class="step-circle">3</div>
-        <div><div class="step-title">Check-in via GPS atau upload foto</div><div class="step-desc">GPS langsung dapat stamp. Upload foto akan diverifikasi admin dulu.</div></div>
+        <div><div class="step-title">Check-in via GPS atau upload foto</div><div class="step-desc">GPS langsung dapat Tjap Upload foto akan diverifikasi admin dulu.</div></div>
       </div>
       <div class="info-step">
         <div class="step-circle">4</div>
-        <div><div class="step-title">Lihat koleksi di tab Tjap</div><div class="step-desc">Kumpulin semua 4 stamp! Semua tersimpan otomatis di browser kamu.</div></div>
+        <div><div class="step-title">Lihat koleksi di tab Tjap</div><div class="step-desc">Kumpulin semua Tjap! Semua tersimpan otomatis di browser kamu.</div></div>
       </div>
 
       <hr class="divider">
@@ -924,7 +924,7 @@ function handleFile(input) {
 function doStamp(method) {
   if (!selectedEvent) return;
   if (stamps[selectedEvent] && !stamps[selectedEvent].pending) {
-    showToast('Sudah punya stamp ini! 🐻');
+    showToast('Sudah punya Tjap ini! 🐻');
     return;
   }
 
