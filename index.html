@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🐻 Paspor Daring · Hari Haetjhan Sedoenia</title>
+<title>🐻 Boekoe Stempel · Hari Haetjhan Sedoenia</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -549,14 +549,14 @@
   <div class="passport-header">
     <div class="header-nation">🐻 Hari Haetjhan Sedoenia 🐻</div>
     <div class="header-name" id="header-name">Selamat Datang!</div>
-    <div class="header-sub">Paspor Daring</div>
+    <div class="header-sub">Boekoe Tjap</div>
     <div class="header-code-badge" id="header-code">memuat...</div>
     <div class="header-emblem">🐻</div>
   </div>
 
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('checkin',this)">Check-in</button>
-    <button class="tab-btn" onclick="switchTab('passport',this)">Paspor</button>
+    <button class="tab-btn" onclick="switchTab('passport',this)">Koleksi</button>
     <button class="tab-btn" onclick="switchTab('info',this)">Info</button>
   </div>
 
@@ -572,7 +572,7 @@
           <button class="btn-copy" onclick="copyKode()" title="Salin kode">📋</button>
         </div>
         <div class="kode-hint">
-          Simpan kode ini! Kamu bisa pakai kode yang sama buat buka paspormu di browser/HP lain.
+          Simpan kode ini! Kamu bisa pakai kode yang sama buat buka Boekoe Tjap di browser/HP lain.
         </div>
         <hr class="divider" style="margin: 10px 0 8px">
         <div style="font-size:11px;color:var(--text-muted);font-family:'Nunito',sans-serif;font-weight:700;margin-bottom:6px">Punya kode lama? Pulihkan di sini:</div>
@@ -706,7 +706,7 @@
       </div>
       <div class="info-step">
         <div class="step-circle">4</div>
-        <div><div class="step-title">Lihat koleksi di tab Paspor</div><div class="step-desc">Kumpulin semua 4 stamp! Semua tersimpan otomatis di browser kamu.</div></div>
+        <div><div class="step-title">Lihat koleksi di tab Tjap</div><div class="step-desc">Kumpulin semua 4 stamp! Semua tersimpan otomatis di browser kamu.</div></div>
       </div>
 
       <hr class="divider">
@@ -825,7 +825,7 @@ function restoreKode() {
   updateHeader();
   updateEventBadges();
   document.getElementById('restore-input').value = '';
-  showToast('Paspor dipulihkan! 🐻 ' + val);
+  showToast('Boekoe dipulihkan! 🐻 ' + val);
 }
 
 function selectEvent(card, id) {
@@ -953,7 +953,7 @@ function doStamp(method) {
 
   document.getElementById('success-msg').textContent = method === 'upload'
     ? 'Foto terkirim! Stamp akan aktif setelah diverifikasi admin. Cek lagi nanti ya 🐻'
-    : 'Stamp resmi masuk ke paspormu! Keren banget 🐻';
+    : 'Tjap telah  masuk ke boekoemoe! Keren banget 🐻';
 
   document.getElementById('stamp-success').style.display = 'block';
   setTimeout(() => document.getElementById('stamp-success').classList.add('show'), 10);
